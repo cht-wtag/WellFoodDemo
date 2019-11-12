@@ -2,31 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90648e77-db85-4edb-8dff-943732fe2cf8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/items.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/meal_plan.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/welcome.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/item.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/items/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/items/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/items/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/items/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/items/show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/meal_plan/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/meal_plan/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/meal_plan/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/meal_plan/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/meal_plan/show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/shared/_error.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/welcome/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/demorres.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/demorres.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/packs/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/packs/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
