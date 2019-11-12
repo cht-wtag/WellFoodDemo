@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Demorres</title>
     <%= csrf_meta_tags %>
@@ -7,9 +7,41 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
-    <%= yield %>
-  </body>
-</html>
+    <header class="container">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+          <%= link_to "Meal Planning", root_path,class: "navbar-brand" %>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+
+          <% if signed_in? %>
+            <li> <%=link_to "Meal Plan", meal_plan_index_path %></li>
+            <li> <%=link_to "Items", items_path %></li>
+            <li> <%=link_to "Sign Out", sign_up_path %></li>
+            <%#Signed in as: <%= current_user.email %>
+            <%#= button_to 'Sign out', , method: :delete %>
+          <% else %>
+           <li><%= link_to 'Sign in', sign_in_path %></li>
+          <% end %>
+        </ul>
+      </div>
+    </nav>
+
+    </header>
+
+    <section class="container">
+      <div id="flash">
+        <% flash.each do |key, value| %>
+          <div class="flash alert <%= key %>"><%= value %></div>
+        <% end %>
+      </div>
+      <%= yield %>
+    </section>
+
+    </body>
+  </html>

@@ -1,0 +1,15 @@
+<h1><%= @item.name %></h1>
+<h2> Description:</h2>
+<p><%= @item.description %></p>
+  <div>
+    <ul class="item-actions">
+      <li><%=link_to "Back",items_path %></li>
+      <%var1=current_user.id %>
+      <%var2=@item.user_id %>
+      <%if var1==var2 %>
+          <li><%= link_to "Edit", edit_item_path(@item) %></li>
+          <li><%= link_to "Delete", item_path(@item), data: {confirm: "are you sure to delete #{@item.name}?"},
+                          method: :delete %></li>
+      <% end %>
+  </ul>
+  </div>

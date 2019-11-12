@@ -1,0 +1,23 @@
+<h1>Items</h1>
+
+<div>
+  <%= link_to "Add new Item",new_item_path %>
+</div>
+<div class="items">
+  <% @items.each do |item| %>
+  <div class="item">
+    <h3><%= link_to item.name, item_path(item) %></h3>
+    <p> <%=item.description %></p>
+    <ul class="item-actions">
+      <%var1=current_user.id %>
+      <%var2=item.user_id %>
+      <%if var1==var2 %>
+        <li><%= link_to "Edit", edit_item_path(item) %></li>
+        <li><%= link_to "Delete", item_path(item), data: {confirm: "are you sure to delete #{item.name}?"},
+                        method: :delete %></li>
+      <% end %>
+    </ul>
+  </div>
+
+  <% end %>
+</div>

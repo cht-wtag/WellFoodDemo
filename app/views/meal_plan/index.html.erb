@@ -1,0 +1,34 @@
+<h1> Meal Plans </h1>
+<%#= render partial: "shared/error" %>
+<% if @current_meal_plan.present? %>
+
+<ul class="meals">
+  <% meal_plan = @current_meal_plan.meals %>
+  <% meal_plan.each do |mealpp| %>
+    <li class="meal">
+      <%= mealpp.date %> - <%=link_to mealpp.item.name, item_path(mealpp.item) %>
+    </li>
+  <% end %>
+</ul>
+<%end %>
+<strong> All the created meal plans</strong>
+<% if  @meal_plans.present? %>
+
+  <ul class="meals">
+
+    <% @meal_plans.each do |mealpp| %>
+      <li class="meal">
+       <%= mealpp.start_date%> ---<%=mealpp.end_date %>
+        <%= link_to "View", meal_plan_path(mealpp)%>
+        <%=link_to "Edit",  edit_meal_plan_path(mealpp)%>
+        <%=link_to 'Delete', meal_plan_path(mealpp), method: :delete, data:{confirm: "are you sure?"} %>
+      </li>
+
+    <% end %>
+  </ul>
+<% else %>
+  <strong> khuje paai ni bhai</strong>
+<%end %>
+<p>
+  <%= link_to 'New plan',  new_meal_plan_path%>
+</p>

@@ -1,0 +1,11 @@
+<h1>Meal Plan <%=@meal_plan %></h1>
+<%#= render partial: "shared/error" %>
+<ul class="meals">
+  <% meals = @meal_plan.meals %>
+  <% meals.each do |meal| %>
+    <li class="meal">
+      <%= meal.date %> - <%=link_to meal.item.name, item_path(meal.item) %>
+    </li>
+  <% end %>
+
+</ul>

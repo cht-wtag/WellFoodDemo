@@ -1,0 +1,24 @@
+<h1>Edit your Meal Plan <%=@meal_plan %></h1>
+
+<%=form_with model: @meal_plan, local: true do |form| %>
+  <%= form.hidden_field :start_date %>
+  <%= form.hidden_field :end_date %>
+
+  <div class="meals">
+    <%= form.fields_for :meals do |meal_fields| %>
+      <%=meal_fields.hidden_field :id %>
+      <%=meal_fields.hidden_field :date %>
+      <p> <%= meal_fields.object.date.to_s %></p>
+
+      <div class="form-control">
+        <%= meal_fields.label :item_id %>
+        <%= meal_fields.select :item_id, current_user.item_options %>
+      </div>
+    <%end %>
+  </div>
+
+  <div class="actions">
+    <%=form.submit %>
+
+  </div>
+<%end %>
