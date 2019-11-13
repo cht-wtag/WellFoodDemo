@@ -8,11 +8,12 @@
       <%=meal_fields.hidden_field :id %>
       <%=meal_fields.hidden_field :date %>
       <p> <%= meal_fields.object.date.to_s %></p>
-
       <div class="form-control">
         <%= meal_fields.label :item_id %>
         <%= meal_fields.select :item_id, current_user.item_options %>
+        <br>   <br>
       </div>
+      <br>
       <%end %>
       </div>
 

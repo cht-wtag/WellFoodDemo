@@ -1,4 +1,6 @@
 <h1> Meal Plans </h1>
+<%#= image_tag("/Users/tamal/Documents/GitHub/WellFoodDemo/app/assets/images/parrots/angelparrot.gif",height: '32', width: '32') %>
+
 <%#= render partial: "shared/error" %>
 <% if @current_meal_plan.present? %>
 
@@ -19,9 +21,9 @@
     <% @meal_plans.each do |mealpp| %>
       <li class="meal">
        <%= mealpp.start_date%> ---<%=mealpp.end_date %>
-        <%= link_to "View", meal_plan_path(mealpp)%>
-        <%=link_to "Edit",  edit_meal_plan_path(mealpp)%>
-        <%=link_to 'Delete', meal_plan_path(mealpp), method: :delete, data:{confirm: "are you sure?"} %>
+        <%= link_to "View", meal_plan_path(mealpp), class: "btn btn-default" %>
+        <%=link_to "Edit",  edit_meal_plan_path(mealpp), class: "btn btn-default" %>
+        <%=link_to 'Delete', meal_plan_path(mealpp), method: :delete, data:{confirm: "are you sure?"} , class: "btn btn-default" %>
       </li>
 
     <% end %>
@@ -30,5 +32,5 @@
   <strong> khuje paai ni bhai</strong>
 <%end %>
 <p>
-  <%= link_to 'New plan',  new_meal_plan_path%>
+  <%= link_to 'New plan',  new_meal_plan_path, class: "btn btn-default" %>
 </p>

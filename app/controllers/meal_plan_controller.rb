@@ -51,7 +51,7 @@ end
   def destroy
  @meal_plan=current_user.meal_plans.find(params[:id])
     @meal_plan.destroy
-    redirect_to new_meal_plan_path, notice: "meal plan is deleted"
+    redirect_to meal_plan_index_path, notice: "meal plan is deleted"
   end
 
 
