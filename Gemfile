@@ -24,6 +24,7 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'jquery-rails'
 gem 'clearance', '~> 1.15.1'
+gem 'pry-rails'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 

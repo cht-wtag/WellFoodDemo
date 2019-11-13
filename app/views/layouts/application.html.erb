@@ -16,13 +16,14 @@
         <div class="container-fluid">
           <div class="navbar-header">
           <%= link_to "Meal Planning", root_path,class: "navbar-brand" %>
+            <%= image_tag('parrots/beerparrot.gif',:width => 69, :height => 50) %>
         </div>
         <ul class="nav navbar-nav navbar-right">
 
           <% if signed_in? %>
             <li> <%=link_to "Meal Plan", meal_plan_index_path %></li>
             <li> <%=link_to "Items", items_path %></li>
-            <li> <%=link_to "Sign Out", sign_up_path %></li>
+            <li> <%=link_to "Sign Out", sign_out_path, method: :delete %></li>
             <%#Signed in as: <%= current_user.email %>
             <%#= button_to 'Sign out', , method: :delete %>
           <% else %>
@@ -37,7 +38,7 @@
     <section class="container">
       <div id="flash">
         <% flash.each do |key, value| %>
-          <div class="flash alert <%= key %>"><%= value %></div>
+          <div class="flash alert <%= alert_class(key) %>"><%= value %></div>
         <% end %>
       </div>
       <%= yield %>
@@ -45,3 +46,4 @@
 
     </body>
   </html>
+
