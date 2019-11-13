@@ -18,7 +18,7 @@
 
 .title-container{
   display: flex;
-justify-content: space-between;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
   h1{
@@ -27,7 +27,7 @@ justify-content: space-between;
 }
 .items{
   display: flex;
-flex-wrap: wrap;
+  flex-wrap: wrap;
 
 }
 .item{
