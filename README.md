@@ -22,7 +22,7 @@
 - Clone the repository
 
   ```bash
-    [https://github.com/tamal3472/mini-seedrs-api.git](https://github.com/cht-wtag/WellFoodDemo.git)
+    https://github.com/cht-wtag/WellFoodDemo.git
   ```
 
 - Run command
